@@ -182,6 +182,7 @@
     
     // ButtonAがクリックされた時の処理
     function btnAClick(e){
+        alarm();
         active = true;
         startTime = new Date();
         
@@ -195,7 +196,6 @@
 
     // ButtonCがクリックされた時の処理
     function btnCClick(e){
-        alarm();
         active = false;
         period = 60* parseInt( $("#minute").val())+parseInt( $("#second").val());
         $("#time").html("経過時間： 0");
